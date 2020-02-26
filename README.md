@@ -309,7 +309,7 @@ A new demonstration is added: [Linux 0.11 Lab: Add a new syscall into Linux 0.11
     * add callgraph generation support
     * add docker support, allow to build the whole lab with one command
     * rewrite the document: README.md
-    * Fix up "Reset-floppy Called"
+    * Fix up "Reset-floppy Called", should use old qemu 0.10, tools/qemu/
     * clean up everything
     * repo: <https://gitee.com/tinylab/linux-0.11-lab>
 
