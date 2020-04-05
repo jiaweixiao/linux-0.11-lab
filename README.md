@@ -61,6 +61,7 @@ Linux 0.11 Lab works on Linux, Windows and Mac OSX, but please install docker at
 Docker is required by Linux 0.11 Lab, please install it at first:
 
 - Linux, Mac OSX, Windows 10: [Docker CE](https://store.docker.com/search?type=edition&offering=community)
+    - For Windows user, please use 'Git Bash Here' in right mouse press menu, Windows PowerShell is **NOT** supported.
 
 - older Windows: [Docker Toolbox](https://www.docker.com/docker-toolbox) or Virtualbox/Vmware + Linux.
 
