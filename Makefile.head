@@ -94,6 +94,7 @@ endif
 ifeq ($(OS), Linux)
   ifeq ($(QEMU_PREBUILT), 1)
     QEMU_PATH = $(QEMU_PREBUILT_PATH)
+    QEMU_LPATH ?= LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(CURDIR)/$(QEMU_PREBUILT_PATH)/libs
     QEMU_XOPTS += -no-kqemu -L $(QEMU_PATH)
   endif
   ifeq ($(BOCHS_PREBUILT), 1)
