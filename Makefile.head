@@ -23,7 +23,7 @@ ROOTFS_DIR := rootfs
 CALLGRAPH_DIR := callgraph
 
 # Xterminal: lxterminal, terminator ...
-ifeq ($(shell env | grep -q ^XDG; echo $$?), 0)
+ifeq ($(shell env | egrep -q "^XDG|^LXQT"; echo $$?), 0)
   XTERM ?= $(shell echo `tools/xterm.sh lxterminal`)
 else
   XTERM := null
