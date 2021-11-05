@@ -13,6 +13,7 @@
 #               -F filterstr
 #               -D depth
 #               -o directory
+#               -t picture type
 #
 #
 # Output: ../callgraph/func.dir_file_name.svg
@@ -61,10 +62,11 @@ function usage
         echo "   -F filterstr"
         echo "   -D depth"
         echo "   -o directory"
+        echo "   -t output type (bmp|eps|jpg|pdf|png...)"
         echo ""
 }
 
-while getopts "F:f:d:D:o:b:h" opt;
+while getopts "F:f:d:D:o:b:h:t:" opt;
 do
         case $opt in
                 F)
@@ -86,6 +88,9 @@ do
                 ;;
                 b)
                         BROWSER=$OPTARG
+                ;;
+                t)
+                        PIC_TYPE=$OPTARG
                 ;;
                 h|?)
                         usage $0;
